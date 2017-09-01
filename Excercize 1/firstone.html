@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 226px;
+            height: 274px;
+            border: 3px solid darkblue;
+            margin: auto
+        }
+
+        .t1,
+        .t4 {
+            border: 1px solid black;
+            height: 48px;
+            margin-left: 3px;
+            margin-top: 3px;
+            display: inline-block;
+            text-align: center;
+            line-height: 48px;
+        }
+
+        .t1 {
+            width: 48px;
+        }
+
+        .t4 {
+            width: 219px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <button type="button" id="but">Click Me!</button>
+    <div id="outher" onclick="functionOuther(this.id)">
+        <p id="p"></p>
+        <div id="hej" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p> WUBADU</p>
+        </div>
+        <div id="med">
+            <p>lubadu</p>
+        </div>
+        <div id="dig" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="for" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="du" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="er" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="en" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="noerd" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="der" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="laeser" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="source" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+        <div id="code" style="width: 25px; height: 25px;background-color:yellow; margin:1px;">
+            <p>dab dab</p>
+        </div>
+
+    </div>
+
+    <div>
+        <p id="p1"></p>
+        <form id="addName">
+            First name:<br>
+            <input type="text" id="name" value="Mickey"><br>
+            <input type="submit" value="Submit" onclick="updateP1Names()">
+            <input type="button" value="removeFirst" onclick="removeFirst()">
+            <input type="button" value="removeLast" onclick="removeLast()">
+        </form>
+
+        <p id="p2"></p>
+        <input type="number" id="price" value="4820">
+        <input type="button" value="filterByPrice" onclick="filterByPrice()">
+    </div>
+
+    <script src="fil3.js"></script>
+    <div id="container" >
+        <div id="display" class="t4"></div>
+        <div id="buttons" onclick="updateDisplay(event)">
+            <div class="t1">7</div>
+            <div class="t1">8</div>
+            <div class="t1">9</div>
+            <div class="t1">/</div>
+
+            <div class="t1">4</div>
+            <div class="t1">5</div>
+            <div class="t1">6</div>
+            <div class="t1">*</div>
+
+            <div class="t1">1</div>
+            <div class="t1">2</div>
+            <div class="t1">3</div>
+            <div class="t1">-</div>
+
+            <div class="t1">0</div>
+            <div class="t1">.</div>
+            <div class="t1">+</div>
+            <div id="calculate" class="t1">=</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
